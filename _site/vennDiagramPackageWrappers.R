@@ -3,7 +3,6 @@
 #function. The idea is that the overlaps are denoted by "," characters in the combination column and these functions use stri_count to 
 #determine how many sets (or elements) are in a combination
 
-#wrapper for two set diagram
 vennTwoElements<-function(combinationFrame=data.frame(),elementOne,elementTwo){
   if(names(dev.cur()) != "null device"){dev.off()}
   draw.pairwise.venn(area1=combinationFrame[combinationFrame[,"combination"]==elementOne,"frequency"],
@@ -17,7 +16,6 @@ vennTwoElements<-function(combinationFrame=data.frame(),elementOne,elementTwo){
                      )
 }
 
-#wrapper for three set diagram
 vennThreeElements<-function(combinationFrame=data.frame(),elementOne,elementTwo,elementThree){
   if(names(dev.cur()) != "null device"){dev.off()}
   draw.triple.venn(area1=combinationFrame[combinationFrame[, "combination"]==elementOne, "frequency"],
@@ -46,7 +44,7 @@ vennThreeElements<-function(combinationFrame=data.frame(),elementOne,elementTwo,
 }
 
 
-#wrapper for four set diagram
+
 vennFourElements<-function(combinationFrame=data.frame(),elementOne,elementTwo,elementThree,elementFour){
   if(names(dev.cur()) != "null device"){dev.off()}
   draw.quad.venn(area1=combinationFrame[combinationFrame[, "combination"]==elementOne, "frequency"],
@@ -102,7 +100,7 @@ vennFourElements<-function(combinationFrame=data.frame(),elementOne,elementTwo,e
 }
 
 
-#wrapper for five set diagram
+
 vennFiveElements<-function(combinationFrame=data.frame(),elementOne,elementTwo,elementThree,elementFour,elementFive){
   if(names(dev.cur()) != "null device"){dev.off()}
   draw.quintuple.venn(

@@ -1,7 +1,5 @@
-#the code below generates the dummy pageview data used in the visualization blog post at [futureurl]
-#the output is a dataframe with 7 columns each having TRUE / FALSE values for a membership in a set (=column)
-#for more information on the data see the blogpost
 pageviews <- as.data.frame(matrix(ncol = 7, nrow = 100000))
+#Need to figure out,  whether we will have a column for no experience or whether this always gets calculated
 names(pageviews) <- c("experienceOne", "experienceTwo", "noExperience", "adblockOn", "adblockOff", "sourceSocial", "sourceOther")
 #Experiences will be in a 1:1:8 ratio for experience1:experience2:noexperience
 pageviews[, "experienceOne"] <- FALSE

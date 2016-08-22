@@ -1,6 +1,4 @@
-#iteration wrapper is a top level function that returns the frequency for each combination (and number of sets),
-#it also includes a column "combination" that denotes the name of the combination through set names separated by ","
-#it only needs with TRUE / FALSE flags for each set affinity
+#iteration wrapper is a top level function that returns the frequency for each combination (and number of sets),  it only needs with TRUE / FALSE flags for each set affinity
 iterationWrapper <- function(data = data.frame()){
   variableNames <- names(data)
   combinationFrame <- as.data.frame(matrix(ncol = 2, nrow = 0))
