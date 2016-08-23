@@ -3,9 +3,11 @@ overlapShares <- function(x = data.frame()){
   for(i in 1:ncol(x)){
     output[, i] <- unlist(
       lapply(
-        X=1:ncol(x), FUN = function(X) sum(x[x[, i]==1, i]==x[x[, i]==1, X])/(nrow(x[x[, i] == 1, ]))
+        X = 1:ncol(x), FUN = function(X) sum(x[x[, i] == 1, i]==x[x[, i]==1, X])/(nrow(x[x[, i] == 1, ]))
         )
     )
   }
+  row.names(output) <- colnames(x)
+  colnames(output) <- colnames(x)
   return(output)
 }
