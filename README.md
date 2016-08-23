@@ -9,7 +9,7 @@ vennDiagramPackageWrappers.R: Wrappers for different functions from VennDiagram 
 
 overlapCorrelation.R: Calculation of overlap only correlation
 
-relativeShares.R: Calculation of overlap shares
+overlapShares.R: Calculation of pairwise two-way overlap shares )
 
 TODO:
 Add input checks into all functions
