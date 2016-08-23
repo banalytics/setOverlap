@@ -1,5 +1,5 @@
 This repository contains reusable parts of the code used for comparing different set visualization in my blog post [futureurl]
-It contains 4 files:
+It contains 5 files:
 
 dataGeneration.R: Generates dummy data used in blogpost
 
@@ -8,6 +8,8 @@ combinationCalculation.R: Recursively calculates all possible set configurations
 vennDiagramPackageWrappers.R: Wrappers for different functions from VennDiagram to make them easier to use
 
 overlapCorrelation.R: Calculation of overlap only correlation
+
+relativeShares.R: Calculation of overlap shares
 
 TODO:
 Add input checks into all functions
